@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://calculatorplus.biz/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator Plus</title>
+	<link rel="stylesheet" href="/assets/main.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://calculatorplus.biz/favicon.ico">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top"></div>
+		<div class="container">
+			<div class="row">
+				<div class="screen"><img src="/assets/screen.png" srcset="landing1/images/screen@2x.png 2x" alt=""></div>
+				<div class="info">
+					<div class="logo"><img src="/assets/logo.png" srcset="landing1/images/logo@2x.png 2x" alt=""></div>
+					<h1 class="title">Simple tiny calculator for Chrome</h1>
+					<div class="desc">Calculator Plus provides you an easy to use and lightweight calculator right in Google Chrome. Access it any time you need in just a click. Enjoy beautiful minimalistic calculator layout - get it right now from Google Web Store.</div>
+					<a href="https://chrome.google.com/webstore/detail/fdcdngijbninbpolpgniidcmoigpkmdp" class="btn  install-ext"><span><strong>Add</strong> to Chrome</span> <span class="icon"><i></i></span></a>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<nav>
+				<span class="copy">© 2017  Calculator Plus.</span>
+				<a href="mailto:info@calculatorplus.biz" class="link">Contact</a>
+				<a href="https://chrome.google.com/webstore/detail/fdcdngijbninbpolpgniidcmoigpkmdp" class="link  install-ext">Open in Chrome Web Store</a>
+				<a href="https://calculatorplus.biz/howto" class="link">How to Uninstall</a>
+			</nav>
+		</footer>
+	</div>
+
+	<script type="text/javascript">
+		var btns = document.querySelectorAll('.install-ext');
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener('click', function (e) {
+				e.preventDefault();
+				chrome.webstore.install();
+			});
+		}
+	</script>
+
+<player-div id="sc-player" style="top:565px" class="right-top">
+<player-tag class="scext-player-tag">
+<player-a target="_blank" href="https://soundcloud.com"></player-a>
+</player-tag>
+<player-wrapper class="scext-player-wrapper">
+<player-util-icons>
+<span class="scext-move-icon"><i class="fa fa-arrows"></i></span>
+<player-a class="scext-settings-link" target="_blank" href="chrome-extension://gdkpgbhhfnpjiembbpifcpfalfnflmop/src/options/options.html">
+<i class="fa fa-cog player-a"></i>
+</player-a>
+</player-util-icons>
+<player-buttons-wrapper>
+<player-button class="scext-player-prev disabled-prev fa fa-fast-backward"></player-button>
+<player-button class="scext-player-play fa fa-play"></player-button>
+<player-button class="scext-player-next fa fa-fast-forward"></player-button>
+<player-button class="scext-player-like fa fa-heart-o"></player-button>
+</player-buttons-wrapper>
+<player-info class="scext-player-info appear"><a href="https://calculatorplus.biz/#"></a></player-info>
+<player-state class="scext-player-state-wrapper">
+<player-div class="scext-player-state-progress"></player-div>
+</player-state>
+</player-wrapper>
+</player-div></body></html>
