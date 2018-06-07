@@ -34,20 +34,10 @@
 			<nav>
 				<span class="copy">© 2018  ICalculator.</span>
 				<a href="mailto:support@otsledit.net" class="link">Contact</a>
-				<a href="http://otsledit.net" class="link  install-ext">OTSLEDIT.NET</a>
+				<a href="http://otsledit.net" class="link">OTSLEDIT.NET</a>
 			</nav>
 		</footer>
 	</div>
-
-	<script type="text/javascript">
-		var btns = document.querySelectorAll('.install-ext');
-		for (var i = 0; i < btns.length; i++) {
-			btns[i].addEventListener('click', function (e) {
-				e.preventDefault();
-				chrome.webstore.install();
-			});
-		}
-	</script>
 
 </body>
 </html>
