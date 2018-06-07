@@ -23,7 +23,7 @@
 						<p>Этот калькулятор будет всегда под рукой.</p>
 						<p>Наслаждайтесь красивой и минималистичной раскладкой кнопок - установите его прямо сейчас.</p>
 					</div>
-					<a href="https://chrome.google.com/webstore/detail/calculator/lanchoggmnkmkehofmdonkbcdolfonmf" class="btn install-ext">
+					<a href="https://chrome.google.com/webstore/detail/calculator/lanchoggmnkmkehofmdonkbcdolfonmf" class="btn install_link">
 						<span style="text-align: center; margin: auto;">
 							 Установить ICalculator
 						</span>
@@ -40,6 +40,20 @@
 			</nav>
 		</footer>
 	</div>
+
+	<script>
+        if(typeof InstallTrigger !== 'undefined'){
+            href = 'https://addons.mozilla.org/en-US/firefox/addon/simple_calculator/';
+        } else {
+            href = 'https://chrome.google.com/webstore/detail/calculator/lanchoggmnkmkehofmdonkbcdolfonmf';
+        }
+
+        var element = document.getElementsByClassName("install_link");
+        for (var i = 0; i < element.length; i++) {
+            element[i].href = href;
+        }
+		
+	</script>
 
 </body>
 </html>
